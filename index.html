@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pratiksha Khobragade | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-logo"><i class="fa-brands fa-pinterest-p"></i></span>
+      <span class="nav-name">Pratiksha</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link active">About</a></li>
+      <a href="education.html" class="nav-link">Education</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+     <li><a href="projects.html" class="nav-link">Projects</a></li>
+     <li><a href="experience.html" class="nav-link">Experience</a></li>
+     <li><a href="resume.html" class="nav-link">Resume</a></li>
+     <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <!-- Animated dots canvas -->
+    <canvas id="dotsCanvas"></canvas>
+
+    <div class="hero-left">
+      <p class="hero-greeting">Hi There, <span class="wave">👋</span></p>
+      <h1 class="hero-title">
+        I Am <span class="highlight">Pratiksha Khobragade</span>
+      </h1>
+      <p class="hero-typewriter">
+        I Am Into <span id="typewriter" class="typed-text"></span><span class="cursor">|</span>
+      </p>
+      <a href="#about" class="btn-primary">About Me <i class="fa-solid fa-circle-chevron-down"></i></a>
+
+      <div class="social-icons">
+        <!-- <a href="#" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-icon" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="social-icon" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a> -->
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-ring">
+        <img src="photo.jpeg" alt="Pratiksha Khobragade" class="profile-photo" id="profilePhoto"/>
+        <!-- Fallback avatar if no photo uploaded -->
+        <div class="profile-fallback" id="profileFallback">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <h2>About <span class="highlight">Me</span></h2>
+      <div class="underline-bar"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-text fade-in">
+        <p>I'm a Computer Science Engineering student and Full-Stack Developer passionate about building modern, scalable, and user-friendly web applications. I specialize in the MERN stack and enjoy turning ideas into real-world digital solutions through clean code and intuitive user experiences.<br>
+          <br>
+
+I have hands-on experience developing full-stack applications, REST APIs, AI-powered platforms, and real-time communication systems. During my internship as a Frontend Developer, I worked on enterprise-grade products, optimized application performance, and built secure, role-based user interfaces.<br>
+<br>
+
+My technical expertise includes React.js, Node.js, Express.js, MongoDB, JavaScript, and Java. Beyond development, I enjoy solving Data Structures and Algorithms problems, participating in hackathons, and continuously exploring new technologies.<br>
+
+<br>
+
+I'm always excited to learn, collaborate, and create impactful software that makes a difference.</p>
+        <ul class="about-details">
+          <li><i class="fa-solid fa-location-dot"></i> Nagpur, Maharashtra, India</li>
+          <li><i class="fa-solid fa-envelope"></i> khobragadepratiksha491@gmail.com</li>
+          <li><i class="fa-solid fa-briefcase"></i> Open to Opportunities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h3>Pratiksha <span>Khobragade</span></h3>
+      <p>Full Stack Developer | MERN Enthusiast | Problem Solver</p>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="footer-links-section">
+      <h4>Quick Links</h4>
+      <a href="index.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-social">
+      <h4>Connect With Me</h4>
+
+      <a href="https://www.linkedin.com/in/pratiksha-khobragade-9041bb303"
+         target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+      </a>
+
+      <a href="https://github.com/pratiksha-khobragade"
+         target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>
+      © 2026 <strong>Pratiksha Khobragade</strong> | All Rights Reserved
+    </p>
+  </div>
+
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
