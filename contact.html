@@ -1,224 +1,532 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Contact | Pratiksha Khobragade</title>
 
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 
   <!-- Font Awesome -->
-
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
 
   <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700;800&display=swap"
+    rel="stylesheet"
+  >
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700;800&display=swap"
-    rel="stylesheet">
-
+  <!-- ================= CONTACT PAGE STYLES ================= -->
   <style>
-    /* Contact page specific styles */
 
+    /* Contact section */
     #contact {
       min-height: 100vh;
       padding-top: 140px;
+      padding-bottom: 80px;
     }
+
+
+    /* ================= PROFILE BUTTON ================= */
 
     .contact-profile-link {
-      display: inline-flex;
+      display: inline-flex !important;
       align-items: center;
+      justify-content: center;
       gap: 8px;
-      margin-top: 8px;
-      padding: 10px 18px;
-      border-radius: 30px;
-      background: linear-gradient(135deg, #00B4D8, #0077B6);
-      color: #fff;
-      text-decoration: none;
-      font-size: 0.9rem;
+
+      margin-top: 10px;
+      padding: 9px 17px;
+
+      border: 1px solid #00b4d8;
+      border-radius: 25px;
+
+      background: #ffffff;
+      color: #0077b6 !important;
+
+      text-decoration: none !important;
+
+      font-family: "Poppins", sans-serif;
+      font-size: 0.82rem;
       font-weight: 600;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0, 180, 216, 0.25);
+
+      transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+      box-shadow: 0 3px 10px rgba(0, 119, 182, 0.12);
+
+      width: fit-content;
     }
 
-    .contact-profile-link:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 119, 182, 0.35);
-    }
 
+    /* Button icon */
     .contact-profile-link i {
-      font-size: 0.95rem;
+      font-size: 0.85rem;
     }
+
+
+    /* Hover effect */
+    .contact-profile-link:hover {
+      background: #0077b6;
+      color: #ffffff !important;
+
+      transform: translateY(-2px);
+
+      box-shadow: 0 6px 16px rgba(0, 119, 182, 0.25);
+    }
+
+
+    /* Active/click effect */
+    .contact-profile-link:active {
+      transform: translateY(0);
+    }
+
+
+    /* ================= CONTACT ITEMS ================= */
+
+    .contact-item {
+      position: relative;
+    }
+
+    .contact-item p {
+      margin-bottom: 5px;
+    }
+
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 768px) {
+
+      #contact {
+        padding-top: 110px;
+      }
+
+      .contact-profile-link {
+        padding: 8px 15px;
+        font-size: 0.78rem;
+      }
+
+    }
+
   </style>
 
 </head>
 
+
 <body>
+
 
   <!-- ================= NAVBAR ================= -->
 
   <nav class="navbar" id="navbar">
+
+    <!-- Brand -->
     <div class="nav-brand">
+
       <span class="nav-logo">
         <i class="fa-brands fa-pinterest-p"></i>
       </span>
-      <span class="nav-name">Pratiksha</span>
+
+      <span class="nav-name">
+        Pratiksha
+      </span>
+
     </div>
 
-<ul class="nav-links" id="navLinks">
-  <li><a href="index.html#about" class="nav-link">About</a></li>
-  <li><a href="education.html" class="nav-link">Education</a></li>
-  <li><a href="skills.html" class="nav-link">Skills</a></li>
-  <li><a href="projects.html" class="nav-link">Projects</a></li>
-  <li><a href="experience.html" class="nav-link">Experience</a></li>
-  <li><a href="resume.html" class="nav-link">Resume</a></li>
-  <li><a href="contact.html" class="nav-link active">Contact</a></li>
-</ul>
 
-<div class="hamburger" id="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+    <!-- Navigation -->
+    <ul class="nav-links" id="navLinks">
+
+      <li>
+        <a href="index.html#about" class="nav-link">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="education.html" class="nav-link">
+          Education
+        </a>
+      </li>
+
+      <li>
+        <a href="skills.html" class="nav-link">
+          Skills
+        </a>
+      </li>
+
+      <li>
+        <a href="projects.html" class="nav-link">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="experience.html" class="nav-link">
+          Experience
+        </a>
+      </li>
+
+      <li>
+        <a href="resume.html" class="nav-link">
+          Resume
+        </a>
+      </li>
+
+      <li>
+        <a href="contact.html" class="nav-link active">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+
+    <!-- Mobile hamburger -->
+    <div class="hamburger" id="hamburger">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </div>
 
   </nav>
+
+
 
   <!-- ================= CONTACT SECTION ================= -->
 
   <section class="section" id="contact">
-<div class="section-header">
-  <h2>Contact <span class="highlight">Me</span></h2>
-  <div class="underline-bar"></div>
-</div>
 
-<div class="contact-grid">
 
-  <!-- Contact Info -->
-  <div class="contact-info fade-in">
+    <!-- Section heading -->
+    <div class="section-header">
 
-    <div class="contact-item">
-      <i class="fa-solid fa-envelope"></i>
-      <div>
-        <strong>Email</strong>
-        <p>khobragadepratiksha491@gmail.com</p>
-      </div>
+      <h2>
+        Contact <span class="highlight">Me</span>
+      </h2>
+
+      <div class="underline-bar"></div>
+
     </div>
 
-    <div class="contact-item">
-      <i class="fa-solid fa-location-dot"></i>
-      <div>
-        <strong>Location</strong>
-        <p>Nagpur, Maharashtra, India</p>
+
+
+    <!-- Contact content -->
+    <div class="contact-grid">
+
+
+      <!-- ================= CONTACT INFORMATION ================= -->
+
+      <div class="contact-info fade-in">
+
+
+        <!-- Email -->
+        <div class="contact-item">
+
+          <i class="fa-solid fa-envelope"></i>
+
+          <div>
+
+            <strong>Email</strong>
+
+            <p>
+              khobragadepratiksha491@gmail.com
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Location -->
+        <div class="contact-item">
+
+          <i class="fa-solid fa-location-dot"></i>
+
+          <div>
+
+            <strong>Location</strong>
+
+            <p>
+              Nagpur, Maharashtra, India
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- LinkedIn -->
+        <div class="contact-item">
+
+          <i class="fa-brands fa-linkedin-in"></i>
+
+          <div>
+
+            <strong>LinkedIn</strong>
+
+            <br>
+
+            <a
+              href="https://www.linkedin.com/in/pratiksha-khobragade-9041bb303"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-profile-link"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              View Profile
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- GitHub -->
+        <div class="contact-item">
+
+          <i class="fa-brands fa-github"></i>
+
+          <div>
+
+            <strong>GitHub</strong>
+
+            <br>
+
+            <a
+              href="https://github.com/pratiksha-khobragade"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-profile-link"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              View Profile
+            </a>
+
+          </div>
+
+        </div>
+
+
       </div>
+
+
+
+      <!-- ================= CONTACT FORM ================= -->
+
+      <form
+        class="contact-form fade-in"
+        onsubmit="handleFormSubmit(event)"
+      >
+
+        <!-- Name -->
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          autocomplete="name"
+          required
+        >
+
+
+        <!-- Email -->
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          autocomplete="email"
+          required
+        >
+
+
+        <!-- Message -->
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="6"
+          required
+        ></textarea>
+
+
+        <!-- Submit -->
+        <button
+          type="submit"
+          class="btn-primary"
+        >
+
+          Send Message
+
+          <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+      </form>
+
+
     </div>
-
-    <div class="contact-item">
-      <i class="fa-brands fa-linkedin-in"></i>
-      <div>
-        <strong>LinkedIn</strong><br>
-        <a href="https://www.linkedin.com/in/pratiksha-khobragade-9041bb303"
-           target="_blank"
-           class="contact-profile-link">
-          View Profile
-        </a>
-      </div>
-    </div>
-
-    <div class="contact-item">
-      <i class="fa-brands fa-github"></i>
-      <div>
-        <strong>GitHub</strong><br>
-        <a href="https://github.com/pratiksha-khobragade"
-           target="_blank"
-           class="contact-profile-link">
-          View Profile
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Contact Form -->
-  <form class="contact-form fade-in"
-        onsubmit="handleFormSubmit(event)">
-
-    <input
-      type="text"
-      placeholder="Your Name"
-      required>
-
-    <input
-      type="email"
-      placeholder="Your Email"
-      required>
-
-    <textarea
-      placeholder="Your Message"
-      rows="6"
-      required></textarea>
-
-    <button type="submit" class="btn-primary">
-      Send Message
-      <i class="fa-solid fa-paper-plane"></i>
-    </button>
-
-  </form>
-
-</div>
 
   </section>
 
-  <!-- ========== FOOTER ========== -->
-<footer class="footer">
 
-  <div class="footer-container">
 
-    <!-- Brand -->
-    <div class="footer-brand">
-      <h3>Pratiksha <span>Khobragade</span></h3>
-      <p>Full Stack Developer | MERN Enthusiast | Problem Solver</p>
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+
+    <div class="footer-container">
+
+
+      <!-- Brand -->
+      <div class="footer-brand">
+
+        <h3>
+          Pratiksha <span>Khobragade</span>
+        </h3>
+
+        <p>
+          Full Stack Developer | MERN Enthusiast | Problem Solver
+        </p>
+
+      </div>
+
+
+
+      <!-- Quick Links -->
+      <div class="footer-links-section">
+
+        <h4>
+          Quick Links
+        </h4>
+
+        <a href="index.html">
+          About
+        </a>
+
+        <a href="education.html">
+          Education
+        </a>
+
+        <a href="skills.html">
+          Skills
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="experience.html">
+          Experience
+        </a>
+
+        <a href="resume.html">
+          Resume
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
+
+
+      <!-- Social Links -->
+      <div class="footer-social">
+
+        <h4>
+          Connect With Me
+        </h4>
+
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/pratiksha-khobragade-9041bb303"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <i class="fa-brands fa-linkedin-in"></i>
+
+          LinkedIn
+
+        </a>
+
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/pratiksha-khobragade"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <i class="fa-brands fa-github"></i>
+
+          GitHub
+
+        </a>
+
+      </div>
+
+
     </div>
 
-    <!-- Navigation Links -->
-    <div class="footer-links-section">
-      <h4>Quick Links</h4>
-      <a href="index.html">About</a>
-      <a href="education.html">Education</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
+
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+
+      <p>
+        © 2026
+        <strong>Pratiksha Khobragade</strong>
+        | All Rights Reserved
+      </p>
+
     </div>
 
-    <!-- Social Links -->
-    <div class="footer-social">
-      <h4>Connect With Me</h4>
 
-      <a href="https://www.linkedin.com/in/pratiksha-khobragade-9041bb303"
-         target="_blank">
-        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
-      </a>
+  </footer>
 
-      <a href="https://github.com/pratiksha-khobragade"
-         target="_blank">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
-    </div>
 
-  </div>
 
-  <!-- Bottom Bar -->
-  <div class="footer-bottom">
-    <p>
-      © 2026 <strong>Pratiksha Khobragade</strong> | All Rights Reserved
-    </p>
-  </div>
-
-</footer>
+  <!-- ================= JAVASCRIPT ================= -->
 
   <script src="script.js"></script>
+
+
+  <!-- Contact page active navigation -->
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      navLinks.forEach(link => {
+
+        if (link.getAttribute("href") === "contact.html") {
+          link.classList.add("active");
+        }
+
+      });
+
+    });
+
+  </script>
+
 
 </body>
 </html>

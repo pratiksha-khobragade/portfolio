@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,134 +10,513 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Experience Page Specific Styling -->
+  <style>
+
+    /* ================= CERTIFICATE SECTION ================= */
+
+    .certificate-section {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .certificate-card {
+      width: 100%;
+      max-width: 700px;
+      padding: 28px 30px;
+      background: #ffffff;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      transition: all 0.3s ease;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .certificate-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 15px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: #f0f8ff;
+      color: #0077b6;
+
+      font-size: 25px;
+    }
+
+    .certificate-card h3 {
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      color: #222;
+    }
+
+    .certificate-card p {
+      margin-bottom: 20px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .certificate-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .certificate-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      padding: 10px 20px;
+
+      border-radius: 25px;
+
+      background: #0077b6;
+      color: #ffffff;
+
+      text-decoration: none;
+
+      font-family: "Poppins", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+
+      transition: all 0.3s ease;
+
+      box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2);
+    }
+
+    .certificate-btn:hover {
+      background: #005f8f;
+      transform: translateY(-2px);
+      box-shadow: 0 7px 18px rgba(0, 119, 182, 0.3);
+    }
+
+    .certificate-btn.secondary {
+      background: #ffffff;
+      color: #0077b6;
+      border: 1px solid #0077b6;
+      box-shadow: none;
+    }
+
+    .certificate-btn.secondary:hover {
+      background: #0077b6;
+      color: #ffffff;
+      box-shadow: 0 7px 18px rgba(0, 119, 182, 0.2);
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+
+      .certificate-card {
+        padding: 24px 18px;
+      }
+
+      .certificate-buttons {
+        flex-direction: column;
+      }
+
+      .certificate-btn {
+        width: 100%;
+        max-width: 230px;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
+
   <!-- ================= NAVBAR ================= -->
+
   <nav class="navbar" id="navbar">
+
     <div class="nav-brand">
+
       <span class="nav-logo">
         <i class="fa-brands fa-pinterest-p"></i>
       </span>
-      <span class="nav-name">Pratiksha</span>
+
+      <span class="nav-name">
+        Pratiksha
+      </span>
+
     </div>
+
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link">About</a></li>
-      <li><a href="education.html" class="nav-link">Education</a></li>
-      <li><a href="skills.html" class="nav-link">Skills</a></li>
-      <li><a href="projects.html" class="nav-link">Projects</a></li>
-      <li><a href="experience.html" class="nav-link active">Experience</a></li>
-      <li><a href="resume.html" class="nav-link">Resume</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
+
+      <li>
+        <a href="index.html" class="nav-link">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="education.html" class="nav-link">
+          Education
+        </a>
+      </li>
+
+      <li>
+        <a href="skills.html" class="nav-link">
+          Skills
+        </a>
+      </li>
+
+      <li>
+        <a href="projects.html" class="nav-link">
+          Projects
+        </a>
+      </li>
+
+      <li>
+        <a href="experience.html" class="nav-link active">
+          Experience
+        </a>
+      </li>
+
+      <li>
+        <a href="resume.html" class="nav-link">
+          Resume
+        </a>
+      </li>
+
+      <li>
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+      </li>
+
     </ul>
 
+
     <div class="hamburger" id="hamburger">
+
       <span></span>
       <span></span>
       <span></span>
+
     </div>
+
   </nav>
 
+
+
   <!-- ================= EXPERIENCE SECTION ================= -->
+
   <section class="section section-alt" id="experience">
 
+
     <div class="section-header">
-      <h2>My <span class="highlight">Experience</span></h2>
+
+      <h2>
+        My <span class="highlight">Experience</span>
+      </h2>
+
       <div class="underline-bar"></div>
+
     </div>
+
 
     <div class="timeline">
 
-      <!-- Experience 1 -->
+
+      <!-- ================= EXPERIENCE 1 ================= -->
+
       <div class="timeline-item fade-in">
 
         <div class="timeline-dot"></div>
 
+
         <div class="timeline-card">
 
+
           <span class="timeline-year">
-            21 Mar 2026 – 21 Jun 2026 (Remote)
+            21 Mar 2026 – 24 June 2026 (Remote)
           </span>
 
+
           <h3>
-            Frontend Developer Intern | DP Info System, Bhavnagar.
+            Full Stack Developer Intern | DP Info System, Bhavnagar
           </h3>
 
-          <p>
-            <li>Architected and deployed a secure Medical ERP dashboard used by 7+ healthcare professionals, reducing data retrieval
-            latency by 65% and ensuring 99.9% uptime for critical patient information systems.</li>
-            <li>Solely engineered the complete frontend infrastructure for TaskUp, a scalable work management SaaS platform using React and modern JavaScript, architecting a modular component-driven codebase across 80+ files from the ground up</li>
-            <li>Designed a complex dual-layer Role-Based Access Control (RBAC) system supporting dynamic, real-time dashboards for three distinct user ecosystems (Enterprise, Academic, Personal) with Organization-level and Project-level permissions including scoped access values (ANY / OWN / CREATOR / NONE)</li>
-            <li>Built a fully functional Notes system with a rich content editor using native contentEditable, custom formatting toolbar with 10+ actions, and a recently-deleted recovery flow — optimizing page load speeds by 3.5 seconds and directly contributing to a 25% increase in user retention rates</li>
-            <li>Developed a multi-view Task Management dashboard supporting Kanban board, Table view, and Personal workspace with real-time task creation, status tracking, priority management, and subtask handling</li>
-            <li>Designed a full-featured Calendar & Events module with scheduling, event modals, participant management, waiting list, and recurring event support — following production SaaS patterns modeled after Bordio and Notion</li>
-          </p>
+
+          <ul>
+
+            <li>
+              Architected and deployed a secure Medical ERP dashboard used by
+              7+ healthcare professionals, reducing data retrieval latency by
+              65% and ensuring 99.9% uptime for critical patient information systems.
+            </li>
+
+            <li>
+              Solely engineered the complete frontend infrastructure for TaskUp,
+              a scalable work management SaaS platform using React and modern
+              JavaScript, architecting a modular component-driven codebase across
+              80+ files from the ground up.
+            </li>
+
+            <li>
+              Designed a complex dual-layer Role-Based Access Control (RBAC)
+              system supporting dynamic, real-time dashboards for three distinct
+              user ecosystems (Enterprise, Academic, Personal) with
+              Organization-level and Project-level permissions including scoped
+              access values (ANY / OWN / CREATOR / NONE).
+            </li>
+
+            <li>
+              Built a fully functional Notes system with a rich content editor
+              using native contentEditable, custom formatting toolbar with 10+
+              actions, and a recently-deleted recovery flow — optimizing page
+              load speeds by 3.5 seconds and directly contributing to a 25%
+              increase in user retention rates.
+            </li>
+
+            <li>
+              Developed a multi-view Task Management dashboard supporting Kanban
+              board, Table view, and Personal workspace with real-time task
+              creation, status tracking, priority management, and subtask handling.
+            </li>
+
+            <li>
+              Designed a full-featured Calendar & Events module with scheduling,
+              event modals, participant management, waiting list, and recurring
+              event support — following production SaaS patterns modeled after
+              Bordio and Notion.
+            </li>
+
+          </ul>
+
+
+          <!-- ================= CERTIFICATE ================= -->
+
+          <div class="certificate-section">
+
+            <div class="certificate-card">
+
+              <div class="certificate-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+
+              <h3>
+                Internship Completion Certificate
+              </h3>
+
+              <p>
+                Certificate of completion for my Full Stack Developer
+                internship at DP Info System.
+              </p>
+
+
+              <div class="certificate-buttons">
+
+                <!-- View Certificate -->
+                <a
+                  href="INTERNSHIP%20COMPLETION%20CERTIFICATE.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="certificate-btn"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                  View Completion Certificate
+                </a>
+
+
+                <!-- Download Certificate -->
+                <a
+                  href="INTERNSHIP%20COMPLETION%20CERTIFICATE.pdf"
+                  download="Pratiksha-Khobragade-Internship-Completion-Certificate.pdf"
+                  class="certificate-btn secondary"
+                >
+                  <i class="fa-solid fa-download"></i>
+                  Download Certificate
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
 
         </div>
 
       </div>
 
+
     </div>
 
   </section>
 
-  <!-- ========== FOOTER ========== -->
-<footer class="footer">
 
-  <div class="footer-container">
 
-    <!-- Brand -->
-    <div class="footer-brand">
-      <h3>Pratiksha <span>Khobragade</span></h3>
-      <p>Full Stack Developer | MERN Enthusiast | Problem Solver</p>
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+
+    <div class="footer-container">
+
+
+      <!-- Brand -->
+      <div class="footer-brand">
+
+        <h3>
+          Pratiksha <span>Khobragade</span>
+        </h3>
+
+        <p>
+          Full Stack Developer | MERN Enthusiast | Problem Solver
+        </p>
+
+      </div>
+
+
+      <!-- Navigation Links -->
+      <div class="footer-links-section">
+
+        <h4>
+          Quick Links
+        </h4>
+
+        <a href="index.html">
+          About
+        </a>
+
+        <a href="education.html">
+          Education
+        </a>
+
+        <a href="skills.html">
+          Skills
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="experience.html">
+          Experience
+        </a>
+
+        <a href="resume.html">
+          Resume
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
+
+      <!-- Social Links -->
+      <div class="footer-social">
+
+        <h4>
+          Connect With Me
+        </h4>
+
+
+        <a
+          href="https://www.linkedin.com/in/pratiksha-khobragade-9041bb303"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <i class="fa-brands fa-linkedin-in"></i>
+          LinkedIn
+
+        </a>
+
+
+        <a
+          href="https://github.com/pratiksha-khobragade"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <i class="fa-brands fa-github"></i>
+          GitHub
+
+        </a>
+
+      </div>
+
+
     </div>
 
-    <!-- Navigation Links -->
-    <div class="footer-links-section">
-      <h4>Quick Links</h4>
-      <a href="index.html">About</a>
-      <a href="education.html">Education</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="experience.html">Experience</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+
+      <p>
+        © 2026
+        <strong>Pratiksha Khobragade</strong>
+        | All Rights Reserved
+      </p>
+
     </div>
 
-    <!-- Social Links -->
-    <div class="footer-social">
-      <h4>Connect With Me</h4>
 
-      <a href="https://www.linkedin.com/in/pratiksha-khobragade-9041bb303"
-         target="_blank">
-        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
-      </a>
+  </footer>
 
-      <a href="https://github.com/pratiksha-khobragade"
-         target="_blank">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
-    </div>
 
-  </div>
 
-  <!-- Bottom Bar -->
-  <div class="footer-bottom">
-    <p>
-      © 2026 <strong>Pratiksha Khobragade</strong> | All Rights Reserved
-    </p>
-  </div>
-
-</footer>
+  <!-- ================= JAVASCRIPT ================= -->
 
   <script src="script.js"></script>
 
+
+  <!-- Active Navigation -->
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      navLinks.forEach(link => {
+
+        if (link.getAttribute("href") === "experience.html") {
+          link.classList.add("active");
+        }
+
+      });
+
+    });
+
+  </script>
+
+
 </body>
+
 </html>
